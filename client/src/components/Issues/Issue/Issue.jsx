@@ -13,7 +13,7 @@ const Issue = ({ issue, onAddToCart }) => {
         <Card className={classes.root}>
             <CardMedia className={classes.media} image={issue.user.avatar_url} title={issue.title} /> 
             <CardContent>
-            <Typography variant='h8' gutterBottom>
+            <Typography variant='subtitle2' gutterBottom>
                 <div style={{ display: 'flex', justifyContent: 'space-between'}}>
                     <Typography>title:</Typography>
                     <Typography>author:</Typography>
@@ -21,7 +21,7 @@ const Issue = ({ issue, onAddToCart }) => {
             </Typography>
                 <div className={classes.cardContent}>
                     <Typography component={Link} to='/comments' variant='outlined'>{issue.title}</Typography>
-                    <Typography variant='h7'>{issue.user.login}</Typography>
+                    <Typography variant='subtitle1'>{issue.user.login}</Typography>
                 </div>
                 {/* <Typography dangerouslySetInnerHTML={{ __html: issue.description }} variant='body2' color='textSecondary' /> */}
             </CardContent>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import  { Navbar, Issues, Comments }  from './components';
+import  { Navbar, Issues, Comments, Search }  from './components';
 
 const host = 'https://api.github.com/repos/octocat/hello-world/issues';
 
@@ -37,6 +37,9 @@ const App = () => {
                     </Route>
                     <Route exact path='/comments'>
                         <Comments items={issues}/>
+                    </Route>
+                    <Route exact path='/search'>
+                        <Search items={issues}/>
                     </Route>
                 </Switch>
             </div>
