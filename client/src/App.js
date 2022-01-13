@@ -5,6 +5,7 @@ import  { Navbar, Issues, Comments, Search }  from './components';
 
 const host = 'https://api.github.com/repos/octocat/hello-world/issues';
 
+
 const App = () => {
 
     const [issues, setIssues] = useState([]);
@@ -26,6 +27,7 @@ const App = () => {
         fetchIssues();
     },[])
     console.log(issues);
+  
 
     return (
         <Router>

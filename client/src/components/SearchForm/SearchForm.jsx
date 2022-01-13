@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom';
 import { useForm, FormProvider } from 'react-hook-form';
 import FormInput from './CustomTextField';
 
+
+
 const SearchForm = () => {
 
     const methods = useForm();
+  
 
     return (
         <>
