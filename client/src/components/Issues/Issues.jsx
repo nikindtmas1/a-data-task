@@ -5,7 +5,7 @@ import Issue from './Issue/Issue';
 
 import useStyles from './styles';
 
-const Issues = ({ issues, onAddToCart }) => {
+const Issues = ({ items, onAddToCart }) => {
 
     const classes = useStyles();
 
@@ -14,7 +14,7 @@ const Issues = ({ issues, onAddToCart }) => {
     <main className={classes.content}>
         <div className={classes.toolbar} />
         <Grid container justifyContent='center' spacing={4}>
-            {issues.map((issue) => (
+            {items.map((issue) => (
                 <Grid item key={issue.id} xs={12} sm={6} md={4} lg={3}>
                     <Issue issue={issue} onAddToCart={onAddToCart} />
                 </Grid>

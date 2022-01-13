@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import  { Navbar, Issues }  from './components';
+import  { Navbar, Issues, Comments }  from './components';
 
-const host = 'https://api.github.com/repos/SoftUni/Programming-Basics-Resources/issues';
+const host = 'https://api.github.com/repos/octocat/hello-world/issues';
 
 const App = () => {
 
@@ -34,6 +34,9 @@ const App = () => {
                 <Switch>
                     <Route exact path='/issues'>
                         <Issues items={issues}/>
+                    </Route>
+                    <Route exact path='/comments'>
+                        <Comments items={issues}/>
                     </Route>
                 </Switch>
             </div>
