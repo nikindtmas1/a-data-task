@@ -1,0 +1,20 @@
+{
+  "name": "a-data-task",
+  "version": "1.0.0",
+  "description": "task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikindtmas1/a-data-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikindtmas1/a-data-task/issues"
+  },
+  "homepage": "https://github.com/nikindtmas1/a-data-task#readme"
+}
