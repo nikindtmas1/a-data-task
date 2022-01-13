@@ -19,10 +19,10 @@ const Navbar = () => {//{ totalItems }
                         <img src='' alt='' height='25px' className={classes.image} />
                         Search
                     </Typography>
-                    <Typography component={Link} to='/issues' variant='h6' className={classes.title} color='inherit'>
+                    {/* <Typography component={Link} to='/issues' variant='h6' className={classes.title} color='inherit'>
                         <img src='' alt='' height='25px' className={classes.image} />
                         Issues
-                    </Typography>
+                    </Typography> */}
                     <div className={classes.grow} />
                     {/* {location.pathname === '/' && (
                     <div className={classes.button}>
