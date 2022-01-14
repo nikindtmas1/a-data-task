@@ -17,7 +17,7 @@ open new terminal
 cd client
 npm install
 npm start
-open new tab in brawser on localhost:5000
+open new tab in brawser on localhost:3000
 ```
 
 ## :pencil: License
