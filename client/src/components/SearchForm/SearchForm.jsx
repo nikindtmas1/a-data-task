@@ -9,21 +9,35 @@ import FormInput from './CustomTextField';
 const SearchForm = () => {
 
     const methods = useForm();
-  
+
 
     return (
         <>
-            <Typography variant='h6' gutterBottom>Shipping Address</Typography>
+            <br />
+            <br />
+            <br />
+            <br />
+            <Typography variant='h6' >Search Repo</Typography>
             <FormProvider {...methods}>
                 <form>
-                    <Grid>
+                    <br />
+                    <label>Owner name:</label>
+                    <br />
+                    <input name='firstName' label='Owner name'></input>
+                    <br />
+                    <br />
+                    <label>Repo name:</label>
+                    <br />
+                    <input name='lastName' label='Owner name'></input>
+                    {/* <Grid>
                         <FormInput required name='firstName' label='Owner name' />
                         <FormInput required name='lastName' label='Repo name' />
-                    </Grid>
+                    </Grid> */}
+                    <br />
                     <br />
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                <Button component={Link} to='/issues' variant='outlined'>Search</Button>
-                                
+                        <Button component={Link} to='/issues' variant='outlined'>Search</Button>
+
                     </div>
                 </form>
             </FormProvider>
