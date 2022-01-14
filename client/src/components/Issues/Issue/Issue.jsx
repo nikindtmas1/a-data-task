@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Button } from '@material-ui/core'; 
-import {AddShoppingCart, SpaRounded} from '@material-ui/icons';
+// import {AddShoppingCart, SpaRounded} from '@material-ui/icons';
 
 import useStyles from './styles';
 
@@ -20,7 +20,7 @@ const Issue = ({ issue, onAddToCart }) => {
                 </div> 
             </Typography>
                 <div className={classes.cardContent}>
-                    <Typography component={Link} to='/comments' variant='outlined'>{issue.title}</Typography>
+                    <Typography component={Link} to={`/comments/${issue.id}`} description={issue.body} variant='outlined'>{issue.title}</Typography>
                     <Typography variant='subtitle1'>{issue.user.login}</Typography>
                 </div>
                 {/* <Typography dangerouslySetInnerHTML={{ __html: issue.description }} variant='body2' color='textSecondary' /> */}
